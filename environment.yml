@@ -1,0 +1,12 @@
+name: lets-plot-experiments
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7
+  - geopandas
+  - jupyter
+  - numpy
+  - pandas
+  - pip
+  - pip:
+    - lets-plot
