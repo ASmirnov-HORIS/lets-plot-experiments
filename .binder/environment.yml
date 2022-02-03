@@ -8,5 +8,6 @@ dependencies:
   - numpy
   - pandas
   - pip
+  - seaborn
   - pip:
     - lets-plot
