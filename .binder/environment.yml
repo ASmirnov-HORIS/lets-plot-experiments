@@ -8,6 +8,8 @@ dependencies:
   - numpy
   - pandas
   - pip
+  - r-irkernel
+  - r-ggplot2
   - scipy
   - seaborn
   - pip:
