@@ -7,6 +7,7 @@ dependencies:
   - jupyter
   - numpy
   - pandas
+  - pillow
   - pip
   - r-irkernel
   - r-ggplot2
