@@ -1,5 +1,3 @@
-demo/text_width_estimation/data/*.csv
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -133,3 +131,4 @@ dmypy.json
 # other
 
 .DS_Store
+demo/text_width_estimation/data/full/*.csv
