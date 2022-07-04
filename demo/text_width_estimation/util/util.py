@@ -50,34 +50,51 @@ def get_df(path, df_type):
 
     return result_df
 
-def transform_char_widths_to_orders(char_widths_df):
-    def get_row_df(font_df, alphabet):
-        font_df = font_df[font_df.alphabet == alphabet]
-        if font_df.width.min() == font_df.width.max():
-            return font_df.assign(result=lambda x: np.nan).set_index(["alphabet", "char"]).result
+def transform_values_to_orders(df, *, values_col, sorted_col, grouping_cols=[], agg_method=np.mean):
+    def as_tuple(t):
+        if isinstance(t, str):
+            return (t,)
+        return t
 
-        font_df = font_df.sort_values(by="width")
-        font_df["result"] = font_df.assign(u=1)\
-                                   .groupby("width")["u"]\
-                                   .transform(lambda x: (x.cumsum() / x.count()).astype(int) * x.count())\
-                                   .cumsum()\
-                                   .shift(periods=1, fill_value=0)
+    def slice_df(sliced_df, group_names, group_values):
+        if len(group_names) == 0:
+            return sliced_df
+        return slice_df(sliced_df[sliced_df[group_names[0]] == group_values[0]], group_names[1:], group_values[1:])
 
-        return font_df.set_index(["alphabet", "char"]).result
+    def get_row_df(group_df):
+        group_df = group_df.groupby(sorted_col)[values_col].agg(agg_method).reset_index()
+        if group_df[values_col].min() == group_df[values_col].max():
+            return group_df.assign(result=lambda x: np.nan).set_index(sorted_col).result
+        group_df = group_df.sort_values(by=values_col)
+        group_df["result"] = group_df.assign(u=1)\
+                                     .groupby(values_col)["u"]\
+                                     .transform(lambda x: (x.cumsum() / x.count()).astype(int) * x.count())\
+                                     .cumsum()\
+                                     .shift(periods=1, fill_value=0)
+        return group_df.set_index(sorted_col).result
+
+    if len(grouping_cols) == 0:
+        return get_row_df(df).to_frame("order").T
 
     result_df = pd.concat([
-        pd.concat([
-            get_row_df(
-                char_widths_df[
-                    (char_widths_df.font_face == t[0])&
-                    (char_widths_df.font_size == t[1])&
-                    (char_widths_df.font_version == t[2])
-                ],
-                alphabet
-            ) for alphabet in char_widths_df.alphabet.unique()
-        ]).to_frame(name=t).T
-        for t in char_widths_df.groupby(["font_face", "font_size", "font_version"]).width.max().index
+        get_row_df(
+            slice_df(df, grouping_cols, as_tuple(t))
+        ).to_frame(name=as_tuple(t)).T
+        for t in df.groupby(grouping_cols)[values_col].max().index
     ])
-    result_df.set_index(pd.MultiIndex.from_tuples(result_df.index, names=("font_face", "font_size", "font_version")), inplace=True)
+    result_index = pd.MultiIndex.from_tuples(result_df.index, names=grouping_cols) \
+        if len(grouping_cols) > 1 else result_df.index
+    result_df.set_index(result_index, inplace=True)
 
     return result_df
+
+def transform_char_widths_to_orders(cw_df):
+    return pd.concat([
+        transform_values_to_orders(
+            cw_df[cw_df.alphabet == alphabet],
+            values_col="width",
+            sorted_col="char",
+            grouping_cols=["font_face", "font_size", "font_version"]
+        )
+        for alphabet in cw_df.alphabet.unique()
+    ], keys=cw_df.alphabet.unique(), names=["alphabet"], axis=1)
