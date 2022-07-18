@@ -1,10 +1,14 @@
+from collections import namedtuple
+
 import numpy as np
 import pandas as pd
 
 from lets_plot import *
 LetsPlot.setup_html()
 
-FONT_FACES = {
+Font = namedtuple("Font", ["family", "size", "face"])
+
+FONT_FAMILIES = {
     "train": [
         "Courier",
         "Geneva",
@@ -16,9 +20,7 @@ FONT_FACES = {
     ],
     "test": [
         "Arial",
-        "Brush Script MT",
         "Lucida Console",
-        "Wingdings",
     ],
     "all": [
         "Courier",
@@ -45,9 +47,21 @@ def plot_matrix(plots=[], width=400, height=300, columns=2):
 
 def get_df(path, df_type):
     result_df = pd.read_csv(path)
-    result_df = result_df[result_df.font_face.isin(FONT_FACES[df_type])].reset_index(drop=True)
+    result_df = result_df[result_df.font_family.isin(FONT_FAMILIES[df_type])].reset_index(drop=True)
     result_df.fillna("", inplace=True)
 
+    return result_df
+
+def filter_by_font(df, font, *, filters=["family", "size", "face"], drop=True):
+    result_df = df.copy()
+    if "family" in filters:
+        result_df = result_df[result_df.font_family == font.family]
+    if "size" in filters:
+        result_df = result_df[result_df.font_size == font.size]
+    if "face" in filters:
+        result_df = result_df[result_df.font_face == font.face]
+    if drop:
+        result_df = result_df.drop(columns=["font_{0}".format(f) for f in filters]).reset_index(drop=True)
     return result_df
 
 def transform_values_to_orders(df, *, values_col, sorted_col, grouping_cols=[], agg_method=np.mean):
@@ -94,7 +108,7 @@ def transform_char_widths_to_orders(cw_df):
             cw_df[cw_df.alphabet == alphabet],
             values_col="width",
             sorted_col="char",
-            grouping_cols=["font_face", "font_size", "font_version"]
+            grouping_cols=["font_family", "font_size", "font_face"]
         )
         for alphabet in cw_df.alphabet.unique()
     ], keys=cw_df.alphabet.unique(), names=["alphabet"], axis=1)
