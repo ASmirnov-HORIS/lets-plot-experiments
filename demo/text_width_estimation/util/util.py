@@ -31,9 +31,7 @@ FONT_FAMILIES = {
         "Times New Roman",
         "Verdana",
         "Arial",
-        "Brush Script MT",
         "Lucida Console",
-        "Wingdings",
     ],
 }
 
