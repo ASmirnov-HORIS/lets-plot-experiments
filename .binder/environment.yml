@@ -13,6 +13,7 @@ dependencies:
   - pip
   - r-irkernel
   - r-ggplot2
+  - r-quantreg
   - scipy
   - seaborn
   - pip:
