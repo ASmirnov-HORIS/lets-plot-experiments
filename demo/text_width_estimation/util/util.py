@@ -62,6 +62,20 @@ def filter_by_font(df, font, *, filters=["family", "size", "face"], drop=True):
         result_df = result_df.drop(columns=["font_{0}".format(f) for f in filters]).reset_index(drop=True)
     return result_df
 
+def get_char_weights_df(char_widths_df, control_df, *, font):
+    def occurrences_number(series, symbol):
+        try:
+            s = series.str.count(symbol).sum()
+            return s - series.size if symbol in ['$', '^'] else s
+        except:
+            return 0
+    font_char_widths_df = filter_by_font(char_widths_df, font)[["alphabet", "char", "width"]]\
+        .drop_duplicates(subset=["char"]).set_index("char")
+    texts_s = control_df.text.drop_duplicates().str[0:-1]
+    char_weights_s = pd.Series({c: occurrences_number(texts_s, c)
+                                for c in font_char_widths_df.index}, name="weight") + 1
+    return pd.concat([font_char_widths_df, char_weights_s], axis="columns")
+
 def transform_values_to_orders(df, *, values_col, sorted_col, grouping_cols=[], agg_method=np.mean):
     def as_tuple(t):
         if isinstance(t, str):
