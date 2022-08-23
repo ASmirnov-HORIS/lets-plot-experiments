@@ -1,49 +1,56 @@
+import pandas as pd
+
+from . import transform_data as utd
+
 class ClusteringModel:
     import numpy as np
     import pandas as pd
     from sklearn.cluster import KMeans
 
     INDEX_NAME = "char"
-    WIDTH_NAME = "width"
-    WEIGHT_NAME = "weight"
-    CLUSTER_NAME = "cluster"
-    CLUSTER_WIDTH_NAME = "cluster_width"
+    CLUSTERING_COL = "order"
+    SIZE_COL = "width"
+    WEIGHT_COL = "weight"
+    CLUSTER_COL = "cluster"
+    CLUSTER_SIZE_COL = "cluster_width"
 
     predictor = None
     extra_symbol_width = None
 
     def __init__(self,
-                 calc_cluster_width=None,
+                 calc_cluster_size=None,
                  allow_extra_symbols=True,
                  index_name=INDEX_NAME,
-                 width_name=WIDTH_NAME,
-                 weight_name=WEIGHT_NAME,
-                 cluster_name=CLUSTER_NAME,
-                 cluster_width_name=CLUSTER_WIDTH_NAME,
+                 clustering_col=CLUSTERING_COL,
+                 size_col=SIZE_COL,
+                 weight_col=WEIGHT_COL,
+                 cluster_col=CLUSTER_COL,
+                 cluster_size_col=CLUSTER_SIZE_COL,
                  **kmean_parameters):
-        self.calc_cluster_width = calc_cluster_width
+        self.calc_cluster_size = calc_cluster_size
         self.allow_extra_symbols = allow_extra_symbols
         self.kmean_parameters = kmean_parameters
         self.index_name = index_name
-        self.width_name = width_name
-        self.weight_name = weight_name
-        self.cluster_name = cluster_name
-        self.cluster_width_name = cluster_width_name
+        self.clustering_col = clustering_col
+        self.size_col = size_col
+        self.weight_col = weight_col
+        self.cluster_col = cluster_col
+        self.cluster_size_col = cluster_size_col
 
-    def fit(self, char_data, *, admixture=None):
-        if admixture is None:
+    def fit(self, char_data, *, admixture_col=None):
+        if admixture_col is None:
             self.predictor = self._prepare_predictor(char_data, self.kmean_parameters)
         else:
             self.predictor = pd.concat([
                 self._prepare_predictor(
-                    char_data[char_data[admixture] == admixture_key],
+                    char_data[char_data[admixture_col] == admixture_key],
                     {**self.kmean_parameters, **{"n_clusters": admixture_n_clusters}},
                     "{0}-".format(admixture_id)
                 )
                 for admixture_id, (admixture_key, admixture_n_clusters) \
-                    in enumerate(self._calc_admixture_clusters(char_data[admixture].value_counts()).items())
+                    in enumerate(self._calc_admixture_clusters(char_data[admixture_col].value_counts()).items())
             ])
-        self.extra_symbol_width = (self.calc_cluster_width or self._calc_cluster_width)(self.predictor)
+        self.extra_symbol_width = (self.calc_cluster_size or self._calc_cluster_size)(self.predictor)
         return self
 
     def predict(self, text, name=None):
@@ -70,24 +77,26 @@ class ClusteringModel:
         return result
 
     def _prepare_predictor(self, char_data, kmean_parameters, admixture_prefix=""):
-        predictor_df = char_data[[self.width_name, self.weight_name]]
+        predictor_cols = [self.size_col, self.weight_col] if self.clustering_col == self.size_col \
+                                                          else [self.clustering_col, self.size_col, self.weight_col]
+        predictor_df = char_data[predictor_cols].copy()
         predictor_df.index.name = self.index_name
         # Set clusters
-        predictor_df[self.cluster_name] = self.KMeans(**kmean_parameters).fit(predictor_df[[self.width_name]]).labels_
+        predictor_df[self.cluster_col] = self.KMeans(**kmean_parameters).fit(predictor_df[[self.clustering_col]]).labels_
         # Set cluster widths
-        cluster_widths = predictor_df.groupby(self.cluster_name).apply(self.calc_cluster_width or self._calc_cluster_width)
-        predictor_df[self.cluster_width_name] = predictor_df[self.cluster_name].replace(cluster_widths)
+        cluster_widths = predictor_df.groupby(self.cluster_col).apply(self.calc_cluster_size or self._calc_cluster_size)
+        predictor_df[self.cluster_size_col] = predictor_df[self.cluster_col].replace(cluster_widths)
         # Sort clusters
-        predictor_df.sort_values(by=self.cluster_width_name, inplace=True)
+        predictor_df.sort_values(by=self.cluster_size_col, inplace=True)
         predictor_df.cluster.replace(
             {cluster_id: "{0}{1}".format(admixture_prefix, i) \
-             for i, cluster_id in enumerate(predictor_df[self.cluster_name].unique())},
+             for i, cluster_id in enumerate(predictor_df[self.cluster_col].unique())},
             inplace=True
         )
         return predictor_df
 
-    def _calc_cluster_width(self, r):
-        return (r.width * r.weight).sum() / r.weight.sum()
+    def _calc_cluster_size(self, r):
+        return (r[self.size_col] * r[self.weight_col]).sum() / r[self.weight_col].sum()
 
     def _predict_char_width(self, c):
         try:
@@ -108,3 +117,14 @@ class ClusteringModel:
                                   .fillna(self.extra_symbol_width).sum(axis=1).round().astype(int)
         result.name = name or "predict_{0}".format(text_s.name)
         return result
+
+def prepare_char_data(char_widths_df, texts_s, *, width_col="width", char_col="char", font_cols=[], agg_fun=lambda r: r.mean()):
+    char_orders_s = utd.calc_char_orders(char_widths_df, width_col=width_col, char_col=char_col, \
+                                         font_cols=font_cols, agg_fun=agg_fun).loc["order"]
+    char_widths_s = utd.calc_char_widths(char_widths_df, width_col=width_col, char_col=char_col, \
+                                         agg_fun=agg_fun)
+    char_weights_s = utd.calc_char_weights(texts_s)
+    df = pd.concat([char_orders_s, char_widths_s, char_weights_s], axis="columns")
+    df.weight = (df.weight.fillna(0) + 1).astype(int)
+
+    return df

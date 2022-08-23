@@ -1,13 +1,13 @@
-from collections import namedtuple
-
-import numpy as np
-import pandas as pd
+#import numpy as np
+#import pandas as pd
 
 from lets_plot import *
 LetsPlot.setup_html()
 
-Font = namedtuple("Font", ["family", "size", "face"])
+from . import transform_data as utd
 
+# TODO
+'''
 FONT_FAMILIES = {
     "train": [
         "Courier",
@@ -34,6 +34,28 @@ FONT_FAMILIES = {
         "Lucida Console",
     ],
 }
+'''
+
+def read_data(path, *, monospaced=None, family=None, family_col="font_family"):
+    import pandas as pd
+
+    TARGET_FAMILIES = ["Courier", "Geneva", "Georgia", "Helvetica", "Lucida Grande", "Times New Roman", "Verdana"]
+
+    df = pd.read_csv(path)
+    if monospaced is not None:
+        if monospaced:
+            df = utd.narrow_to_one_value(df, "is_monospaced", True)
+        else:
+            df = utd.narrow_to_one_value(df, "is_monospaced", False)
+    if family is not None:
+        if isinstance(family, list):
+            df = df[df[family_col].isin(family)]
+        elif family == "target":
+            df = df[df[family_col].isin(TARGET_FAMILIES)]
+        else:
+            df = df[df[family_col] == family]
+
+    return df
 
 def plot_matrix(plots=[], width=400, height=300, columns=2):
     bunch = GGBunch()
@@ -43,6 +65,8 @@ def plot_matrix(plots=[], width=400, height=300, columns=2):
         bunch.add_plot(plots[i], column * width, row * height, width, height)
     return bunch.show()
 
+# TODO
+'''
 def get_df(path, df_type):
     result_df = pd.read_csv(path)
     result_df = result_df[result_df.font_family.isin(FONT_FAMILIES[df_type])].reset_index(drop=True)
@@ -124,3 +148,4 @@ def transform_char_widths_to_orders(cw_df):
         )
         for alphabet in cw_df.alphabet.unique()
     ], keys=cw_df.alphabet.unique(), names=["alphabet"], axis=1)
+'''
