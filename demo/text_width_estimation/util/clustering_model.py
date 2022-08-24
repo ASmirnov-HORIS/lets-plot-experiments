@@ -119,12 +119,12 @@ class ClusteringModel:
         return result
 
 def prepare_char_data(char_widths_df, texts_s, *, width_col="width", char_col="char", font_cols=[], agg_fun=lambda r: r.mean()):
-    char_orders_s = utd.calc_char_orders(char_widths_df, width_col=width_col, char_col=char_col, \
-                                         font_cols=font_cols, agg_fun=agg_fun).loc["order"]
     char_widths_s = utd.calc_char_widths(char_widths_df, width_col=width_col, char_col=char_col, \
                                          agg_fun=agg_fun)
-    char_weights_s = utd.calc_char_weights(texts_s)
-    df = pd.concat([char_orders_s, char_widths_s, char_weights_s], axis="columns")
+    char_weights_s = utd.calc_char_weights(texts_s, acceptable_chars=char_widths_s.index)
+    char_orders_s = utd.calc_char_orders(char_widths_df, width_col=width_col, char_col=char_col, \
+                                         font_cols=font_cols, agg_fun=agg_fun).loc["order"]
+    df = pd.concat([char_widths_s, char_weights_s, char_orders_s], axis="columns")
     df.weight = (df.weight.fillna(0) + 1).astype(int)
 
     return df

@@ -74,7 +74,7 @@ def calc_char_orders(df, *, width_col="width", char_col="char", font_cols=[], ag
 
     return result_df
 
-def calc_char_weights(texts_s):
+def calc_char_weights(texts_s, *, acceptable_chars=None):
     def occurrences_number(series, symbol):
         try:
             s = series.str.count(symbol).sum()
@@ -84,7 +84,7 @@ def calc_char_weights(texts_s):
 
     chars = [char
         for char in texts_s.str.split("").apply(pd.Series).stack().drop_duplicates().sort_values().values
-        if char != ""
+        if char != "" and (acceptable_chars is None or char in acceptable_chars)
     ]
     result_s = pd.Series({c: occurrences_number(texts_s, c) for c in chars}, name="weight")
     result_s.index.name = "char"
