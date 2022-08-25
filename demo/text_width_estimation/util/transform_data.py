@@ -3,13 +3,21 @@ import pandas as pd
 
 from . import font as ufont
 
-def train_test_split_by_column(df, column, *, train_size=None, train_frac=.75, random_state=42, reset_index=True):
-    values = df[column].drop_duplicates().sample(n=train_size, frac=train_frac, random_state=random_state).values
+def train_test_split_by_column(df, column, *, train_values=None, train_size=None, train_frac=.75, random_state=42, reset_index=True):
+    values = train_values if train_values is not None \
+                          else df[column].drop_duplicates().sample(n=train_size, frac=train_frac, random_state=random_state).values
     train_df, test_df = df[df[column].isin(values)], df[~df[column].isin(values)]
     if reset_index:
         train_df.reset_index(drop=True, inplace=True)
         test_df.reset_index(drop=True, inplace=True)
     return train_df, test_df
+
+def narrow_by_column(df, column, *, values=None, size=None, frac=.1, random_state=42, reset_index=True):
+    return train_test_split_by_column(
+        df, column,
+        train_values=values, train_size=size, train_frac=frac,
+        random_state=random_state, reset_index=reset_index
+    )[0]
 
 def narrow_to_one_value(df, column, value, *, reset_index=True):
     result_df = df[df[column] == value]
