@@ -69,8 +69,7 @@ class ClusteringModel:
     def _calc_admixture_clusters(self, admixture_counts):
         n_admixtures = admixture_counts.shape[0]
         n_clusters = self.kmean_parameters.get("n_clusters", n_admixtures)
-        if n_clusters < n_admixtures:
-            raise Exception("Too few clusters: {0} < {1}".format(n_clusters, n_admixtures))
+        n_clusters += n_admixtures - 1
         result = {}
         for admixture, ratio in (admixture_counts.sort_values() / admixture_counts.sum()).iteritems():
             result[admixture] = max(1, round(n_clusters * ratio))
