@@ -68,11 +68,17 @@ class ClusteringModel:
 
     def _calc_admixture_clusters(self, admixture_counts):
         n_admixtures = admixture_counts.shape[0]
-        n_clusters = self.kmean_parameters.get("n_clusters", n_admixtures)
-        n_clusters += n_admixtures - 1
-        result = {}
-        for admixture, ratio in (admixture_counts.sort_values() / admixture_counts.sum()).iteritems():
-            result[admixture] = max(1, round(n_clusters * ratio))
+        n_clusters = max(n_admixtures, self.kmean_parameters.get("n_clusters", n_admixtures))
+        current_n_clusters = n_clusters
+        admixture_ratios = admixture_counts.sort_values(ascending=False) / admixture_counts.sum()
+        result = {admixture: 0 for admixture in admixture_counts.keys()}
+        while current_n_clusters > 0:
+            for admixture, ratio in admixture_ratios.iteritems():
+                if result[admixture] < max(1, round(n_clusters * ratio)):
+                    result[admixture] += 1
+                    current_n_clusters -= 1
+                    if current_n_clusters == 0:
+                        break
         return result
 
     def _prepare_predictor(self, char_data, kmean_parameters, admixture_prefix=""):
