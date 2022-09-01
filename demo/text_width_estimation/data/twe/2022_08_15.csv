@@ -1,0 +1,47 @@
+platform,model,font_family,font_size,font_face,mult_coeff,error_mean,error_std
+Batik,original,Arial,14,,0.71,1.171,11.78
+Batik,original,Arial,14,bold,0.7,-0.92,10.044
+Batik,original,Arial,14,italic,0.71,1.171,11.78
+Batik,original,Arial,10,,0.71,0.836,8.414
+Batik,original,Arial,10,bold,0.7,-0.657,7.175
+Batik,original,Arial,10,italic,0.71,0.836,8.414
+Batik,original,Arial,18,,0.71,1.505,15.145
+Batik,original,Arial,18,bold,0.7,-1.183,12.914
+Batik,original,Arial,18,italic,0.71,1.505,15.145
+Batik,original,Georgia,14,,0.71,0.333,10.453
+Batik,original,Lucida Console,14,,0.9,0.246,0.08
+Batik,original,Times New Roman,14,,0.65,-0.038,9.908
+Batik,original,Verdana,14,,0.8,1.577,11.282
+Batik,clustering,Arial,14,,0.99,-0.831,2.777
+Batik,clustering,Arial,14,bold,0.99,0.765,3.283
+Batik,clustering,Arial,14,italic,0.99,-0.831,2.777
+Batik,clustering,Arial,10,,0.99,-0.594,1.983
+Batik,clustering,Arial,10,bold,0.99,0.547,2.345
+Batik,clustering,Arial,10,italic,0.99,-0.594,1.983
+Batik,clustering,Arial,18,,0.99,-1.068,3.57
+Batik,clustering,Arial,18,bold,0.99,0.984,4.22
+Batik,clustering,Arial,18,italic,0.99,-1.068,3.57
+Batik,clustering,Georgia,14,,1,0.871,4.78
+Batik,clustering,Lucida Console,14,,1.26,-1.004,13.31
+Batik,clustering,Times New Roman,14,,0.91,-0.94,3.926
+Batik,clustering,Verdana,14,,1.12,0.466,3.662
+Jfx,original,Arial,14,,0.71,1.171,11.78
+Jfx,original,Georgia,14,,0.71,0.333,10.453
+Jfx,original,Lucida Console,14,,0.9,0.246,0.08
+Jfx,original,Times New Roman,14,,0.65,-0.038,9.908
+Jfx,original,Verdana,14,,0.8,1.577,11.282
+Jfx,clustering,Arial,14,,0.99,-0.831,2.777
+Jfx,clustering,Georgia,14,,1,0.871,4.78
+Jfx,clustering,Lucida Console,14,,1.26,-1.004,13.31
+Jfx,clustering,Times New Roman,14,,0.91,-0.94,3.926
+Jfx,clustering,Verdana,14,,1.12,0.466,3.662
+Web,original,Arial,14,,0.71,1.933,11.302
+Web,original,Georgia,14,,0.71,0.326,10.455
+Web,original,Lucida Console,14,,0.9,0.241,0.08
+Web,original,Times New Roman,14,,0.65,0.81,9.391
+Web,original,Verdana,14,,0.79,-1.269,10.842
+Web,clustering,Arial,14,,0.99,-0.069,2.655
+Web,clustering,Georgia,14,,1,0.864,4.779
+Web,clustering,Lucida Console,14,,1.26,-1.009,13.31
+Web,clustering,Times New Roman,14,,0.91,-0.093,3.85
+Web,clustering,Verdana,14,,1.12,1.189,3.659

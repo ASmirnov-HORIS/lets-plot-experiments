@@ -54,17 +54,10 @@ class ClusteringModel:
         return self
 
     def predict(self, text, name=None):
-        if isinstance(text, str):
-            return round(self.np.sum([self._predict_char_width(c) for c in text]))
-        elif isinstance(text, self.pd.core.series.Series):
-            return self._predict_for_series(text, name if (isinstance(name, str)) else None)
-        elif isinstance(text, self.pd.core.frame.DataFrame):
-            return self.pd.concat([
-                self._predict_for_series(text[column], name[column] if (isinstance(name, dict)) else None)
-                for column in text.columns
-            ], axis="columns")
-        else:
-            raise Exception("Bad type of input: {0}".format(type(text)))
+        return predict(
+            text, self.predictor,
+            name=name, allow_extra_symbols=self.allow_extra_symbols, extra_symbol_width=self.extra_symbol_width
+        )
 
     def _calc_admixture_clusters(self, admixture_counts):
         n_admixtures = admixture_counts.shape[0]
@@ -103,25 +96,53 @@ class ClusteringModel:
     def _calc_cluster_size(self, r):
         return (r[self.size_col] * r[self.weight_col]).sum() / r[self.weight_col].sum()
 
-    def _predict_char_width(self, c):
+def predict(text, predictor, *,
+            name=None,
+            round_result=True,
+            allow_extra_symbols=True, extra_symbol_width=0,
+            cluster_width_col="cluster_width"):
+    import pandas as pd
+
+    def predict_char_width(c):
         try:
-            return self.predictor.loc[c].cluster_width
+            return predictor.loc[c][cluster_width_col]
         except KeyError as e:
-            if self.allow_extra_symbols:
-                return self.extra_symbol_width
+            if allow_extra_symbols:
+                return extra_symbol_width
             else:
                 raise e
 
-    def _predict_for_series(self, text_s, name=None):
+    def predict_line(line):
+        result = sum([predict_char_width(c) for c in line])
+        if round_result:
+            return round(result)
+        else:
+            return result
+
+    def predict_for_series(text_s, name=None):
         def split_string(s):
-            return self.pd.Series([s[i:i+1] for i in range(len(s))])
+            return pd.Series([s[i:i+1] for i in range(len(s))])
         df = text_s.apply(split_string)
-        splitted_df = df.replace(self.predictor.cluster_width).fillna(0)
+        splitted_df = df.replace(predictor[cluster_width_col]).fillna(0)
         cols = splitted_df.columns
-        result = splitted_df[cols].apply(self.pd.to_numeric, errors='coerce', axis=1)\
-                                  .fillna(self.extra_symbol_width).sum(axis=1).round().astype(int)
+        result = splitted_df[cols].apply(pd.to_numeric, errors='coerce', axis=1)\
+                                  .fillna(extra_symbol_width).sum(axis=1)
+        if round_result:
+            result = result.round().astype(int)
         result.name = name or "predict_{0}".format(text_s.name)
         return result
+
+    if isinstance(text, str):
+        return predict_line(text)
+    elif isinstance(text, pd.core.series.Series):
+        return predict_for_series(text, name if (isinstance(name, str)) else None)
+    elif isinstance(text, pd.core.frame.DataFrame):
+        return pd.concat([
+            predict_for_series(text[column], name[column] if (isinstance(name, dict)) else None)
+            for column in text.columns
+        ], axis="columns")
+    else:
+        raise Exception("Bad type of input: {0}".format(type(text)))
 
 def prepare_char_data(char_widths_df, texts_s, *, width_col="width", char_col="char", font_cols=[], agg_fun=lambda r: r.mean()):
     char_widths_s = utd.calc_char_widths(char_widths_df, width_col=width_col, char_col=char_col, \
