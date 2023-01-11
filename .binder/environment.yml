@@ -17,5 +17,6 @@ dependencies:
   - r-quantreg
   - scipy
   - seaborn
+  - shapely
   - pip:
     - lets-plot
