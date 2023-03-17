@@ -10,112 +10,112 @@
 text {
    text-rendering: optimizeLegibility;
 }
-#poivQkJ .plot-title {
+#palP7P7 .plot-title {
    fill: #474747;
-   font-family: Lucida Grande, sans-serif;
+   font-family: Lucida Console;
    font-size: 16.0px;
-   font-weight: normal;
+   font-weight: bold;
    font-style: normal;   
 }
-#poivQkJ .plot-subtitle {
+#palP7P7 .plot-subtitle {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 15.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#poivQkJ .plot-caption {
+#palP7P7 .plot-caption {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 13.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#poivQkJ .legend-title {
+#palP7P7 .legend-title {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 15.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#poivQkJ .legend-item {
+#palP7P7 .legend-item {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 13.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#poivQkJ .axis-title-x {
+#palP7P7 .axis-title-x {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 15.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#poivQkJ .axis-text-x {
+#palP7P7 .axis-text-x {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 13.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#da9le1z .axis-tooltip-text-x {
+#dQSkDra .axis-tooltip-text-x {
    fill: #ffffff;
    font-family: Lucida Grande, sans-serif;
    font-size: 13.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#poivQkJ .axis-title-y {
+#palP7P7 .axis-title-y {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 15.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#poivQkJ .axis-text-y {
+#palP7P7 .axis-text-y {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 13.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#da9le1z .axis-tooltip-text-y {
+#dQSkDra .axis-tooltip-text-y {
    fill: #ffffff;
    font-family: Lucida Grande, sans-serif;
    font-size: 13.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#poivQkJ .facet-strip-text-x {
+#palP7P7 .facet-strip-text-x {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 13.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#poivQkJ .facet-strip-text-y {
+#palP7P7 .facet-strip-text-y {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 13.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#da9le1z .tooltip-text {
+#dQSkDra .tooltip-text {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 13.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#da9le1z .tooltip-title {
+#dQSkDra .tooltip-title {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 13.0px;
    font-weight: bold;
    font-style: normal;   
 }
-#da9le1z .tooltip-label {
+#dQSkDra .tooltip-label {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 13.0px;
@@ -124,7 +124,7 @@ text {
 }
 
   </style>
-  <g id="poivQkJ">
+  <g id="palP7P7">
     <rect x="0.0" y="0.0" height="400.0" width="600.0" stroke="rgb(71,71,71)" stroke-opacity="1.0" stroke-width="0.0" fill="rgb(255,255,255)" fill-opacity="1.0">
     </rect>
     <g transform="translate(23.0 34.0 ) ">
@@ -234,18 +234,18 @@ text {
           </g>
         </g>
       </g>
-      <g transform="translate(35.01530667574961 0.0 ) " clip-path="url(#ceNtRAb)" clip-bounds-jfx="[rect (0.0, 0.0), (531.9846933242504, 320.0)]">
+      <g transform="translate(35.01530667574961 0.0 ) " clip-path="url(#cCwvScS)" clip-bounds-jfx="[rect (0.0, 0.0), (531.9846933242504, 320.0)]">
         <defs>
-          <clipPath id="ceNtRAb">
+          <clipPath id="cCwvScS">
             <rect x="0.0" y="0.0" width="531.9846933242504" height="320.0">
             </rect>
           </clipPath>
         </defs>
         <g transform="rotate(0.0 265.9923466621252 160.0 ) ">
-          <path d="M294.1364096279436 170.5 C294.1364096279436 170.5 297.28640962794356 170.5 297.28640962794356 167.35 L297.28640962794356 152.65 C297.28640962794356 152.65 297.28640962794356 149.5 294.1364096279436 149.5 L237.84828369630688 149.5 C237.84828369630688 149.5 234.69828369630687 149.5 234.69828369630687 152.65 L234.69828369630687 167.35 C234.69828369630687 167.35 234.69828369630687 170.5 237.84828369630688 170.5 Z" stroke="rgb(61,61,61)" stroke-opacity="1.0" fill="rgb(255,255,255)" fill-opacity="1.0" stroke-width="1.0">
+          <path d="M302.4923466621252 175.0 C302.4923466621252 175.0 306.9923466621252 175.0 306.9923466621252 170.5 L306.9923466621252 149.5 C306.9923466621252 149.5 306.9923466621252 145.0 302.4923466621252 145.0 L229.49234666212521 145.0 C229.49234666212521 145.0 224.99234666212521 145.0 224.99234666212521 149.5 L224.99234666212521 170.5 C224.99234666212521 170.5 224.99234666212521 175.0 229.49234666212521 175.0 Z" stroke="rgb(61,61,61)" stroke-opacity="1.0" fill="rgb(255,255,255)" fill-opacity="1.0" stroke-width="1.0">
           </path>
-          <g transform="translate(265.9923466621252 164.2 ) ">
-            <text style="fill:#3d3d3d;font-size:14.0px;font-family:sans-serif;" y="0.0" text-anchor="middle">
+          <g transform="translate(265.9923466621252 166.0 ) ">
+            <text style="fill:#3d3d3d;font-size:20.0px;font-family:Lucida Console;" y="0.0" text-anchor="middle">
             Abc+01
             </text>
           </g>
@@ -268,6 +268,6 @@ text {
       </text>
     </g>
   </g>
-  <g id="da9le1z">
+  <g id="dQSkDra">
   </g>
 </svg>
