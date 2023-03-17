@@ -18,5 +18,6 @@ dependencies:
   - scipy
   - seaborn
   - shapely
+  - tornado=6.1
   - pip:
     - lets-plot
