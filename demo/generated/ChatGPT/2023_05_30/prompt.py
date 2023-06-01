@@ -21,5 +21,5 @@ I have a dataset{name} with the following columns:
 
 Write code for data visualization and exploration. Build {plots_count} plots on the dataset. Organize the code so that it is suitable for Jupiter notebook. {target}
 
-For visualization use the Lets-Plot library. Use `LetsPlot.setup_html()` before first occurrence of plot. Try not to use parameters that depends on data (such as 'binwidth'). Use a consistent style when choosing colors, sizes and so on. If you are trying to plot some geospatial data, don't forget to use the coord_map() function.
+For visualization use the Lets-Plot library. Use `LetsPlot.setup_html()` before first occurrence of plot. Try not to use parameters that depends on data (such as 'binwidth'). Use a consistent style when choosing colors, sizes and so on.
     """.format(name=dataset_name, columns=column_descriptions, plots_count=plots_count_str, target=target_description)
