@@ -134,3 +134,4 @@ dmypy.json
 demo/text_width_estimation/data/full/*.csv
 
 demo/static_maps/roads/data
+demo/geocoding/data_comparison/data
