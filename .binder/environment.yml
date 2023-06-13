@@ -16,6 +16,7 @@ dependencies:
   - r-ggridges
   - r-mapproj
   - r-maps
+  - r-hmisc
   - r-rnaturalearth
   - r-quantreg
   - scipy
