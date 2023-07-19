@@ -8,6 +8,7 @@ dependencies:
   - jupyter
   - kotlin-jupyter-kernel
   - numpy
+  - openai
   - pandas
   - pillow
   - pip
