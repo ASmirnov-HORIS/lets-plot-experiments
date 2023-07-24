@@ -10,6 +10,7 @@ dependencies:
   - numpy
   - openai
   - pandas
+  - polars
   - pillow
   - pip
   - r-irkernel
