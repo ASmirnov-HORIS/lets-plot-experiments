@@ -5,6 +5,7 @@ channels:
 dependencies:
   - python=3.8
   - geopandas
+  - ipynb-py-convert
   - jupyter
   - kotlin-jupyter-kernel
   - numpy
