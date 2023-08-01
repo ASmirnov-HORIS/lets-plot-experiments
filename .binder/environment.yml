@@ -27,4 +27,5 @@ dependencies:
   - shapely
   - tornado=6.1
   - pip:
+    - chapyter
     - lets-plot
