@@ -14,12 +14,14 @@ dependencies:
   - polars
   - pillow
   - pip
+  - r-cowplot
   - r-irkernel
   - r-ggplot2
   - r-ggridges
   - r-mapproj
   - r-maps
   - r-hmisc
+  - r-repr
   - r-rnaturalearth
   - r-quantreg
   - scipy
