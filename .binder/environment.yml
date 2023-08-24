@@ -13,4 +13,5 @@ dependencies:
   - r-ggplot2
   - scipy
   - pip:
+    - jupyter-ai
     - lets-plot
