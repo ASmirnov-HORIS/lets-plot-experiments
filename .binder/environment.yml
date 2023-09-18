@@ -3,7 +3,7 @@ channels:
   - conda-forge
   - jetbrains
 dependencies:
-  - python=3.8
+  - python=3.10
   - geopandas
   - jupyter
   - kotlin-jupyter-kernel
