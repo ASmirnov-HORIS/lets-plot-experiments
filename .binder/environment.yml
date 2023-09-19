@@ -11,6 +11,8 @@ dependencies:
   - pandas
   - pip
   - r-ggplot2
+  - r-irkernel
+  - r-recommended
   - scipy
   - pip:
     - jupyter-ai
