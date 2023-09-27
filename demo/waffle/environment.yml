@@ -1,0 +1,10 @@
+name: tmp
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - jupyter
+  - r-devtools
+  - r-ggplot2
+  - r-irkernel
+  - r-recommended
