@@ -1,0 +1,48 @@
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <script type="text/javascript" data-lets-plot-script="library" src="http://127.0.0.1:8080/js-package/build/dist/js/developmentExecutable/lets-plot.js"></script>
+   </head>
+   <body>
+          <div id="qYmtEQ"></div>
+   <script type="text/javascript" data-lets-plot-script="plot">
+       var plotSpec={
+"mapping":{
+},
+"data_meta":{
+},
+"ggtitle":{
+"text":"Value = \\(10^{-15}\\)."
+},
+"kind":"plot",
+"scales":[],
+"layers":[{
+"geom":"label",
+"mapping":{
+"x":"x",
+"y":"y",
+"label":"label"
+},
+"tooltips":{
+"formats":[{
+"field":"@x",
+"format":".1e"
+}],
+"lines":["@x"]
+},
+"data_meta":{
+},
+"size":15.0,
+"data":{
+"x":[1.0E-15],
+"y":[0.0],
+"label":["\\(10^{-15}\\)"]
+}
+}],
+"metainfo_list":[]
+};
+       var plotContainer = document.getElementById("qYmtEQ");
+       LetsPlot.buildPlotFromProcessedSpecs(plotSpec, -1, -1, plotContainer);
+   </script>
+   </body>
+</html>

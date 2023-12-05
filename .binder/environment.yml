@@ -4,6 +4,7 @@ channels:
   - jetbrains
 dependencies:
   - python=3.10
+  - cairosvg
   - geopandas
   - jupyter
   - kotlin-jupyter-kernel
