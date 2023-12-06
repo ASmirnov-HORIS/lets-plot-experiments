@@ -10,112 +10,112 @@
 text {
    text-rendering: optimizeLegibility;
 }
-#pY3E0E5 .plot-title {
+#plAwaxc .plot-title {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 16.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#pY3E0E5 .plot-subtitle {
+#plAwaxc .plot-subtitle {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 15.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#pY3E0E5 .plot-caption {
+#plAwaxc .plot-caption {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 13.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#pY3E0E5 .legend-title {
+#plAwaxc .legend-title {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 15.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#pY3E0E5 .legend-item {
+#plAwaxc .legend-item {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 13.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#pY3E0E5 .axis-title-x {
+#plAwaxc .axis-title-x {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 15.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#pY3E0E5 .axis-text-x {
+#plAwaxc .axis-text-x {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 13.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#dXfLpMG .axis-tooltip-text-x {
+#dQ0lh8O .axis-tooltip-text-x {
    fill: #ffffff;
    font-family: Lucida Grande, sans-serif;
    font-size: 13.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#pY3E0E5 .axis-title-y {
+#plAwaxc .axis-title-y {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 15.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#pY3E0E5 .axis-text-y {
+#plAwaxc .axis-text-y {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 13.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#dXfLpMG .axis-tooltip-text-y {
+#dQ0lh8O .axis-tooltip-text-y {
    fill: #ffffff;
    font-family: Lucida Grande, sans-serif;
    font-size: 13.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#pY3E0E5 .facet-strip-text-x {
+#plAwaxc .facet-strip-text-x {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 13.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#pY3E0E5 .facet-strip-text-y {
+#plAwaxc .facet-strip-text-y {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 13.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#dXfLpMG .tooltip-text {
+#dQ0lh8O .tooltip-text {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 13.0px;
    font-weight: normal;
    font-style: normal;   
 }
-#dXfLpMG .tooltip-title {
+#dQ0lh8O .tooltip-title {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 13.0px;
    font-weight: bold;
    font-style: normal;   
 }
-#dXfLpMG .tooltip-label {
+#dQ0lh8O .tooltip-label {
    fill: #474747;
    font-family: Lucida Grande, sans-serif;
    font-size: 13.0px;
@@ -124,7 +124,7 @@ text {
 }
 
   </style>
-  <g id="pY3E0E5">
+  <g id="plAwaxc">
     <path fill-rule="evenodd" fill="rgb(255,255,255)" fill-opacity="1.0" d="M0.0 0.0 L0.0 400.0 L600.0 400.0 L600.0 0.0 Z">
     </path>
     <g transform="translate(23.0 34.0 ) ">
@@ -258,9 +258,9 @@ text {
           </g>
         </g>
       </g>
-      <g transform="translate(35.01530667574961 0.0 ) " clip-path="url(#cKRKRmu)" clip-bounds-jfx="[rect (0.0, 0.0), (531.9846933242504, 320.0)]">
+      <g transform="translate(35.01530667574961 0.0 ) " clip-path="url(#cc1Hnkl)" clip-bounds-jfx="[rect (0.0, 0.0), (531.9846933242504, 320.0)]">
         <defs>
-          <clipPath id="cKRKRmu">
+          <clipPath id="cc1Hnkl">
             <rect x="0.0" y="0.0" width="531.9846933242504" height="320.0">
             </rect>
           </clipPath>
@@ -273,7 +273,7 @@ text {
               <tspan>
               10
               </tspan>
-              <tspan baseline-shift="super" font-size="60%">
+              <tspan dy="-0.66em" font-size="0.6em">
               -15
               </tspan>
             </text>
@@ -289,7 +289,7 @@ text {
         <tspan>
         10
         </tspan>
-        <tspan baseline-shift="super" font-size="60%">
+        <tspan dy="-0.66em" font-size="0.6em">
         -15
         </tspan>
         <tspan>
@@ -314,6 +314,6 @@ text {
     <path fill="rgb(0,0,0)" fill-opacity="0.0" stroke="rgb(71,71,71)" stroke-opacity="1.0" stroke-width="0.0" d="M0.0 0.0 L0.0 400.0 L600.0 400.0 L600.0 0.0 Z">
     </path>
   </g>
-  <g id="dXfLpMG">
+  <g id="dQ0lh8O">
   </g>
 </svg>
