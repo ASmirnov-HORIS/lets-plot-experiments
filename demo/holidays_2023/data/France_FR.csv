@@ -1,0 +1,26 @@
+Date,Name,Type,Country Name,Country Code
+2023-01-01,New Year's Day,['National holiday'],France,FR
+2023-03-20T22:24:20+01:00,March Equinox,['Season'],France,FR
+2023-03-26T02:00:00+01:00,Daylight Saving Time starts,['Clock change/Daylight Saving Time'],France,FR
+2023-04-07,Good Friday,['Local holiday'],France,FR
+2023-04-09,Easter Sunday,['Observance'],France,FR
+2023-04-10,Easter Monday,['National holiday'],France,FR
+2023-05-01,Labor Day / May Day,['National holiday'],France,FR
+2023-05-08,WWII Victory Day,['National holiday'],France,FR
+2023-05-18,Ascension Day,['National holiday'],France,FR
+2023-05-28,Whit Sunday,['Observance'],France,FR
+2023-05-29,Whit Monday,['National holiday'],France,FR
+2023-06-04,Mother's Day,['Observance'],France,FR
+2023-06-18,Father's Day,['Observance'],France,FR
+2023-06-21T16:57:49+02:00,June Solstice,['Season'],France,FR
+2023-07-14,Bastille Day,['National holiday'],France,FR
+2023-08-15,Assumption of Mary,['National holiday'],France,FR
+2023-09-23T08:50:01+02:00,September Equinox,['Season'],France,FR
+2023-10-29T03:00:00+02:00,Daylight Saving Time ends,['Clock change/Daylight Saving Time'],France,FR
+2023-11-01,All Saints' Day,['National holiday'],France,FR
+2023-11-11,Armistice Day,['National holiday'],France,FR
+2023-12-22T04:27:21+01:00,December Solstice,['Season'],France,FR
+2023-12-24,Christmas Eve,['Observance'],France,FR
+2023-12-25,Christmas Day,['National holiday'],France,FR
+2023-12-26,St Stephen's Day,['Local holiday'],France,FR
+2023-12-31,New Year's Eve,['Observance'],France,FR

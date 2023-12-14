@@ -1,0 +1,22 @@
+Date,Name,Type,Country Name,Country Code
+2023-01-01,New Year,['National holiday'],Greenland,GL
+2023-01-06,Epiphany,['National holiday'],Greenland,GL
+2023-03-20T18:24:20-03:00,March Equinox,['Season'],Greenland,GL
+2023-03-25T22:00:00-03:00,Daylight Saving Time starts,['Clock change/Daylight Saving Time'],Greenland,GL
+2023-04-06,Maundy Thursday,['National holiday'],Greenland,GL
+2023-04-07,Good Friday,['National holiday'],Greenland,GL
+2023-04-09,Easter Sunday,['Common local holiday'],Greenland,GL
+2023-04-10,Easter Monday,['National holiday'],Greenland,GL
+2023-05-01,May Day,['Half-day holiday'],Greenland,GL
+2023-05-05,Great Prayer Day,['National holiday'],Greenland,GL
+2023-05-18,Ascension Day,['National holiday'],Greenland,GL
+2023-05-29,Whit Monday,['National holiday'],Greenland,GL
+2023-06-21,National Day,['National holiday'],Greenland,GL
+2023-06-21T12:57:49-02:00,June Solstice,['Season'],Greenland,GL
+2023-09-23T04:50:01-02:00,September Equinox,['Season'],Greenland,GL
+2023-10-28T23:00:00-02:00,Daylight Saving Time ends,['Clock change/Daylight Saving Time'],Greenland,GL
+2023-12-22T01:27:21-02:00,December Solstice,['Season'],Greenland,GL
+2023-12-24,Christmas Eve,['Observance'],Greenland,GL
+2023-12-25,Christmas Day,['National holiday'],Greenland,GL
+2023-12-26,Boxing Day,['National holiday'],Greenland,GL
+2023-12-31,New Year's Eve,['National holiday'],Greenland,GL
