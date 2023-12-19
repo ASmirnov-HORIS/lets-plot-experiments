@@ -1,0 +1,41 @@
+Date,Name,Type,Country Name,Country Code
+2023-01-01,New Year,['National holiday'],Lebanon,LB
+2023-01-06,Orthodox Christmas,"['National holiday', 'Orthodox']",Lebanon,LB
+2023-02-09,St Maron's Day,['National holiday'],Lebanon,LB
+2023-02-14,Commemoration of the Assasination of PM Rafic Hariri,['National holiday'],Lebanon,LB
+2023-03-09,Teachers' Day,['Observance'],Lebanon,LB
+2023-03-20T23:24:20+02:00,March Equinox,['Season'],Lebanon,LB
+2023-03-21,Mother's Day,['Observance'],Lebanon,LB
+2023-03-23,Ramadan Start,['Observance'],Lebanon,LB
+2023-03-25,Feast of the Annunciation,['National holiday'],Lebanon,LB
+2023-03-30T00:00:00+02:00,Daylight Saving Time starts,['Clock change/Daylight Saving Time'],Lebanon,LB
+2023-04-07,Good Friday,['National holiday'],Lebanon,LB
+2023-04-09,Easter Sunday,['Common local holiday'],Lebanon,LB
+2023-04-10,Easter Monday,['National holiday'],Lebanon,LB
+2023-04-14,Orthodox Good Friday,"['National holiday', 'Orthodox']",Lebanon,LB
+2023-04-16,Orthodox Easter Day,"['National holiday', 'Orthodox']",Lebanon,LB
+2023-04-17,Orthodox Easter Monday,"['National holiday', 'Orthodox']",Lebanon,LB
+2023-04-21,Eid al-Fitr,['National holiday'],Lebanon,LB
+2023-04-22,Eid ul Fitr Holiday,['National holiday'],Lebanon,LB
+2023-05-01,Labor Day,['National holiday'],Lebanon,LB
+2023-05-07,Martyr's Day,['National holiday'],Lebanon,LB
+2023-05-07,Liberation and Resistance Holiday,['National holiday'],Lebanon,LB
+2023-05-18,Ascension Day,['Observance'],Lebanon,LB
+2023-05-25,Liberation and Resistance Day,['Observance'],Lebanon,LB
+2023-06-21T17:57:49+03:00,June Solstice,['Season'],Lebanon,LB
+2023-06-28,Eid al-Adha,['National holiday'],Lebanon,LB
+2023-06-29,Eid al-Adha Holiday,['National holiday'],Lebanon,LB
+2023-06-30,Eid al-Adha Holiday,['National holiday'],Lebanon,LB
+2023-07-19,Muharram,['National holiday'],Lebanon,LB
+2023-07-28,Ashoura,['National holiday'],Lebanon,LB
+2023-07-29,Ashoura Holiday,['National holiday'],Lebanon,LB
+2023-08-04,National Day of Mourning,['National holiday'],Lebanon,LB
+2023-08-15,Assumption of Mary,['National holiday'],Lebanon,LB
+2023-09-08,Nativity of Mary,['Observance'],Lebanon,LB
+2023-09-23T09:50:01+03:00,September Equinox,['Season'],Lebanon,LB
+2023-09-27,The Prophet's Birthday,['National holiday'],Lebanon,LB
+2023-10-29T00:00:00+03:00,Daylight Saving Time ends,['Clock change/Daylight Saving Time'],Lebanon,LB
+2023-11-01,All Saints' Day,['Observance'],Lebanon,LB
+2023-11-22,Independence Day,['National holiday'],Lebanon,LB
+2023-12-22T05:27:21+02:00,December Solstice,['Season'],Lebanon,LB
+2023-12-25,Christmas Day,['National holiday'],Lebanon,LB
