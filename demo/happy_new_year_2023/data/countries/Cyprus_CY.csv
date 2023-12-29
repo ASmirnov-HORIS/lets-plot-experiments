@@ -1,0 +1,26 @@
+Date,Name,Type,Country Name,Country Code
+2023-01-01,New Year's Day,['National holiday'],Cyprus,CY
+2023-01-06,Epiphany,['National holiday'],Cyprus,CY
+2023-02-27,Green Monday,['National holiday'],Cyprus,CY
+2023-03-20T23:24:20+02:00,March Equinox,['Season'],Cyprus,CY
+2023-03-25,Greek Independence Day,['National holiday'],Cyprus,CY
+2023-03-26T03:00:00+02:00,Daylight Saving Time starts,['Clock change/Daylight Saving Time'],Cyprus,CY
+2023-04-01,Cyprus National Holiday,['National holiday'],Cyprus,CY
+2023-04-14,Good Friday (Orthodox),"['National holiday', 'Orthodox']",Cyprus,CY
+2023-04-15,Holy Saturday (Orthodox),"['Observance', 'Orthodox']",Cyprus,CY
+2023-04-16,Easter Sunday (Orthodox),"['Observance', 'Orthodox']",Cyprus,CY
+2023-04-17,Easter Monday (Orthodox),"['National holiday', 'Orthodox']",Cyprus,CY
+2023-04-18,Orthodox Easter Tuesday (banks only),"['Common local holiday', 'Orthodox']",Cyprus,CY
+2023-05-01,Labour Day/May Day,['National holiday'],Cyprus,CY
+2023-06-05,Orthodox Pentecost Monday,"['National holiday', 'Orthodox']",Cyprus,CY
+2023-06-21T17:57:49+03:00,June Solstice,['Season'],Cyprus,CY
+2023-08-15,Assumption of the Virgin Mary,['National holiday'],Cyprus,CY
+2023-09-23T09:50:01+03:00,September Equinox,['Season'],Cyprus,CY
+2023-10-01,Cyprus Independence Day,['National holiday'],Cyprus,CY
+2023-10-28,Ochi Day,['National holiday'],Cyprus,CY
+2023-10-29T04:00:00+03:00,Daylight Saving Time ends,['Clock change/Daylight Saving Time'],Cyprus,CY
+2023-12-22T05:27:21+02:00,December Solstice,['Season'],Cyprus,CY
+2023-12-24,Christmas Eve,['Observance'],Cyprus,CY
+2023-12-25,Christmas Day,['National holiday'],Cyprus,CY
+2023-12-26,Boxing Day,['National holiday'],Cyprus,CY
+2023-12-31,New Year's Eve,['Observance'],Cyprus,CY

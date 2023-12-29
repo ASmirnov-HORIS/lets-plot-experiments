@@ -1,0 +1,129 @@
+Date,Name,Type,Country Name,Country Code
+2023-01-01,New Year's Day,['National holiday'],Australia,AU
+2023-01-02,Day off for New Year's Day,['Local holiday'],Australia,AU
+2023-01-06,Epiphany,['Christian'],Australia,AU
+2023-01-07,Orthodox Christmas Day,['Orthodox'],Australia,AU
+2023-01-14,Orthodox New Year,['Orthodox'],Australia,AU
+2023-01-22,Lunar New Year,['Observance'],Australia,AU
+2023-01-22,Lunar New Year,['Local holiday'],Australia,AU
+2023-01-23,Lunar New Year Holiday (Day 2),['Local holiday'],Australia,AU
+2023-01-26,Australia Day,['National holiday'],Australia,AU
+2023-02-06,Tu B'Shevat (Arbor Day),['Hebrew'],Australia,AU
+2023-02-13,Royal Hobart Regatta,['Local holiday'],Australia,AU
+2023-02-14,Valentine's Day,['Observance'],Australia,AU
+2023-02-18,Isra and Mi'raj,['Muslim'],Australia,AU
+2023-02-21,Carnival / Shrove Tuesday / Pancake Day,['Christian'],Australia,AU
+2023-02-22,Ash Wednesday,['Christian'],Australia,AU
+2023-03-06,Labour Day,['Local holiday'],Australia,AU
+2023-03-07,Purim,['Hebrew'],Australia,AU
+2023-03-13,Labour Day,['Local holiday'],Australia,AU
+2023-03-13,Eight Hours Day,['Local holiday'],Australia,AU
+2023-03-13,Adelaide Cup,['Local holiday'],Australia,AU
+2023-03-13,Canberra Day,['Local holiday'],Australia,AU
+2023-03-16,National Close the Gap Day,['Observance'],Australia,AU
+2023-03-17,St Patrick's Day,['Observance'],Australia,AU
+2023-03-21T08:24:20+11:00,March Equinox,['Season'],Australia,AU
+2023-03-21,Harmony Day,['Observance'],Australia,AU
+2023-03-23,Ramadan Start,['Muslim'],Australia,AU
+2023-04-02T03:00:00+11:00,Daylight Saving Time ends,['Clock change/Daylight Saving Time'],Australia,AU
+2023-04-02,Palm Sunday,['Christian'],Australia,AU
+2023-04-06,Maundy Thursday,['Christian'],Australia,AU
+2023-04-06,First day of Passover,['Hebrew'],Australia,AU
+2023-04-06,Self Determination Day,['Local holiday'],Australia,AU
+2023-04-07,Good Friday,['Local holiday'],Australia,AU
+2023-04-07,Good Friday,"['National holiday', 'Christian']",Australia,AU
+2023-04-08,Holy Saturday,['Local holiday'],Australia,AU
+2023-04-09,Easter Sunday,['Local holiday'],Australia,AU
+2023-04-09,Easter Sunday,['Local holiday'],Australia,AU
+2023-04-09,Easter Sunday,['Local holiday'],Australia,AU
+2023-04-09,Easter Sunday,['Local holiday'],Australia,AU
+2023-04-09,Easter Sunday,['Observance'],Australia,AU
+2023-04-09,Easter Sunday,['Local holiday'],Australia,AU
+2023-04-09,Easter Sunday,['Local holiday'],Australia,AU
+2023-04-10,Easter Monday,"['National holiday', 'Christian']",Australia,AU
+2023-04-11,Easter Tuesday,['Local holiday'],Australia,AU
+2023-04-13,Last day of Passover,['Hebrew'],Australia,AU
+2023-04-14,Orthodox Good Friday,['Orthodox'],Australia,AU
+2023-04-15,Orthodox Holy Saturday,['Orthodox'],Australia,AU
+2023-04-16,Orthodox Easter,['Orthodox'],Australia,AU
+2023-04-17,Laylatul Qadr (Night of Power),['Muslim'],Australia,AU
+2023-04-17,Orthodox Easter Monday,['Orthodox'],Australia,AU
+2023-04-18,Yom HaShoah,['Hebrew'],Australia,AU
+2023-04-22,Eid ul Fitr,['Muslim'],Australia,AU
+2023-04-22,Hari Raya Puasa,['Local holiday'],Australia,AU
+2023-04-24,Day off for Hari Raya Puasa,['Local holiday'],Australia,AU
+2023-04-25,ANZAC Day,['National holiday'],Australia,AU
+2023-04-25,ANZAC Day Observed,['Local holiday'],Australia,AU
+2023-04-26,Yom HaAtzmaut,['Hebrew'],Australia,AU
+2023-05-01,May Day,['Local holiday'],Australia,AU
+2023-05-01,Labour Day,['Local holiday'],Australia,AU
+2023-05-06,The Coronation of King Charles III,['Observance'],Australia,AU
+2023-05-09,Lag B'Omer,['Hebrew'],Australia,AU
+2023-05-14,Mother's Day,['Observance'],Australia,AU
+2023-05-18,Ascension Day,['Christian'],Australia,AU
+2023-05-26,Shavuot,['Hebrew'],Australia,AU
+2023-05-26,National Sorry Day,['Observance'],Australia,AU
+2023-05-28,Pentecost,['Christian'],Australia,AU
+2023-05-29,Whit Monday,['Christian'],Australia,AU
+2023-05-29,Reconciliation Day,['Local holiday'],Australia,AU
+2023-06-04,Trinity Sunday,['Christian'],Australia,AU
+2023-06-05,Western Australia Day,['Local holiday'],Australia,AU
+2023-06-06,Queensland Day,['Local observance'],Australia,AU
+2023-06-08,Corpus Christi,['Christian'],Australia,AU
+2023-06-12,King's Birthday,['Local holiday'],Australia,AU
+2023-06-22T00:57:49+10:00,June Solstice,['Season'],Australia,AU
+2023-06-28,Eid al-Adha,['Muslim'],Australia,AU
+2023-06-29,Eid al-Adha,['Muslim'],Australia,AU
+2023-06-29,Hari Raya Haji,['Local holiday'],Australia,AU
+2023-07-02,First Day of NAIDOC Week,['Observance'],Australia,AU
+2023-07-20,Muharram/Islamic New Year,['Muslim'],Australia,AU
+2023-07-27,Tisha B'Av,['Hebrew'],Australia,AU
+2023-07-28,Ashura,['Muslim'],Australia,AU
+2023-07-29,Ashura,['Muslim'],Australia,AU
+2023-08-07,New South Wales Bank Holiday,['Local holiday'],Australia,AU
+2023-08-07,Northern Territory Picnic Day,['Local holiday'],Australia,AU
+2023-08-15,Assumption of Mary,['Christian'],Australia,AU
+2023-08-16,Royal National Agricultural Show Day Queensland,['Local holiday'],Australia,AU
+2023-09-03,Father's Day,['Observance'],Australia,AU
+2023-09-16,Rosh Hashana,['Hebrew'],Australia,AU
+2023-09-23T16:50:01+10:00,September Equinox,['Season'],Australia,AU
+2023-09-25,Yom Kippur,['Hebrew'],Australia,AU
+2023-09-25,King's Birthday,['Local holiday'],Australia,AU
+2023-09-27,Milad un Nabi (Mawlid),['Muslim'],Australia,AU
+2023-09-27,Hari Maulad Nabi,['Local holiday'],Australia,AU
+2023-09-29,Friday before the AFL Grand Final,['Local holiday'],Australia,AU
+2023-09-30,First day of Sukkot,['Hebrew'],Australia,AU
+2023-10-01T02:00:00+10:00,Daylight Saving Time starts,['Clock change/Daylight Saving Time'],Australia,AU
+2023-10-02,Territory Day,['Local holiday'],Australia,AU
+2023-10-02,King's Birthday,['Local holiday'],Australia,AU
+2023-10-02,Labour Day,['Local holiday'],Australia,AU
+2023-10-02,Labour Day,['Local holiday'],Australia,AU
+2023-10-04,Feast of St Francis of Assisi,['Christian'],Australia,AU
+2023-10-06,Hoshana Rabbah,['Hebrew'],Australia,AU
+2023-10-07,Shemini Atzeret,['Hebrew'],Australia,AU
+2023-10-08,Simchat Torah,['Hebrew'],Australia,AU
+2023-10-15,International Pregnancy and Infant Loss Remembrance Day,['Observance'],Australia,AU
+2023-10-26,Royal Hobart Show,['Local holiday'],Australia,AU
+2023-10-31,Halloween,['Observance'],Australia,AU
+2023-11-01,All Saints' Day,['Christian'],Australia,AU
+2023-11-02,All Souls' Day,['Christian'],Australia,AU
+2023-11-06,Recreation Day,['Local holiday'],Australia,AU
+2023-11-07,Melbourne Cup Day,['Local holiday'],Australia,AU
+2023-11-11,Remembrance Day,['Observance'],Australia,AU
+2023-11-12,Diwali/Deepavali,['Observance'],Australia,AU
+2023-12-03,First Sunday of Advent,['Observance'],Australia,AU
+2023-12-08,Feast of the Immaculate Conception,['Christian'],Australia,AU
+2023-12-08,First Day of Hanukkah,['Hebrew'],Australia,AU
+2023-12-15,Last day of Hanukkah,['Hebrew'],Australia,AU
+2023-12-22T14:27:21+11:00,December Solstice,['Season'],Australia,AU
+2023-12-24,Christmas Eve,['Observance'],Australia,AU
+2023-12-24,Christmas Eve,['Local holiday'],Australia,AU
+2023-12-24,Christmas Eve,['Local holiday'],Australia,AU
+2023-12-24,Christmas Eve,['Local holiday'],Australia,AU
+2023-12-25,Christmas Day,"['National holiday', 'Christian']",Australia,AU
+2023-12-25,Christmas Day,['Local holiday'],Australia,AU
+2023-12-26,Boxing Day,"['National holiday', 'Christian']",Australia,AU
+2023-12-26,Proclamation Day,['Local holiday'],Australia,AU
+2023-12-31,New Year's Eve,['Observance'],Australia,AU
+2023-12-31,New Year's Eve,['Local holiday'],Australia,AU
+2023-12-31,New Year's Eve,['Local holiday'],Australia,AU
