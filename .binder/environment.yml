@@ -6,7 +6,7 @@ dependencies:
   - python=3.10
   - cairosvg
   - geopandas
-  - jupyter
+  - jupyterlab
   - kotlin-jupyter-kernel
   - numpy
   - pandas
@@ -16,5 +16,4 @@ dependencies:
   - r-recommended
   - scipy
   - pip:
-    - jupyter-ai
     - lets-plot
