@@ -11,9 +11,11 @@ dependencies:
   - numpy
   - pandas
   - pip
+  - pyarrow
   - r-ggplot2
   - r-irkernel
   - r-recommended
   - scipy
   - pip:
     - lets-plot
+    - shapely>=2.0.0
