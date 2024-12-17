@@ -1,0 +1,16 @@
+hash,version,kind,date,added,changed,fixed,link
+dfbd0ca13d1717fbe8f6ab187367efae5c8a2244,4.5.2,patch,Fri Dec 13 18:47:00 2024 +0100,0,2,18,https://github.com/JetBrains/lets-plot/releases/tag/v4.5.2
+55105aaf81cb6f30c7612714110023aa4a8b6c71,4.5.1,patch,Fri Oct 25 17:25:38 2024 +0200,0,1,2,https://github.com/JetBrains/lets-plot/releases/tag/v4.5.1
+fed606ae898a3f2a3b0649dbdaf943504265eff5,4.5.0,minor,Wed Oct 23 17:22:18 2024 +0200,9,4,14,https://github.com/JetBrains/lets-plot/releases/tag/v4.5.0
+c244299d36ee5b6544097706fe8e954e64abd9ae,4.5.0rc2,rc,Fri Oct 18 13:49:34 2024 +0200,0,0,0,https://github.com/JetBrains/lets-plot/releases/tag/v4.5.0rc2
+2142b64bfeed4b0d7946d477b04cf90fa23c28b1,4.5.0rc1,rc,Thu Oct 17 15:21:10 2024 +0200,0,0,0,https://github.com/JetBrains/lets-plot/releases/tag/v4.5.0rc1
+e36cb9a2d07b275fb4d23af55de8a8ca5b487735,4.4.1,patch,Wed Aug 21 18:05:46 2024 +0200,1,0,2,https://github.com/JetBrains/lets-plot/releases/tag/v4.4.1
+6091b635eeaea9fe1c8d27c313e9827080f7173c,4.4.0,minor,Fri Aug 2 17:13:12 2024 +0200,7,3,7,https://github.com/JetBrains/lets-plot/releases/tag/v4.4.0
+f551a62f59d4d1203376180fd287fcfa2ee49899,4.4.0rc1,rc,Thu Aug 1 16:59:20 2024 +0200,0,0,0,https://github.com/JetBrains/lets-plot/releases/tag/v4.4.0rc1
+0f28341f1daf1bc8c263f2412894b6e8e4d3e73e,4.3.3,patch,Wed May 29 18:14:19 2024 +0200,1,1,5,https://github.com/JetBrains/lets-plot/releases/tag/v4.3.3
+de1b96cc5120485112a6f6457f6351e5e0131fed,4.3.2,patch,Thu Apr 25 16:48:41 2024 +0200,0,1,4,https://github.com/JetBrains/lets-plot/releases/tag/v4.3.2
+a3233e9cdbe6b8474a90d7443c20564de16e3cfb,4.3.1,patch,Tue Apr 16 16:09:51 2024 +0200,7,0,25,https://github.com/JetBrains/lets-plot/releases/tag/v4.3.1
+584d37d5c7b9ff22e7610e7ba6c942c0ea9d7bcb,4.3.1rc1,rc,Fri Apr 12 17:42:27 2024 +0200,0,0,0,https://github.com/JetBrains/lets-plot/releases/tag/v4.3.1rc1
+09484c78d9c9873598bd24afde294d1180afc59a,4.3.0,minor,Thu Mar 7 17:57:33 2024 +0100,6,2,14,https://github.com/JetBrains/lets-plot/releases/tag/v4.3.0
+b5e933bde3f595cd2e76fcc7319a99bc48527b6a,4.3.0rc2,rc,Mon Mar 4 18:52:21 2024 +0100,0,0,0,https://github.com/JetBrains/lets-plot/releases/tag/v4.3.0rc2
+c59e611493eca8ce7a95b1c10fb48cb60570388c,4.3.0rc1,rc,Fri Mar 1 17:47:07 2024 +0100,0,0,0,https://github.com/JetBrains/lets-plot/releases/tag/v4.3.0rc1
