@@ -16,6 +16,7 @@ dependencies:
   - r-irkernel
   - r-recommended
   - scipy
+  - statsmodels
   - pip:
     - lets-plot
     - shap
