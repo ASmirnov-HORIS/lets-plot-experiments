@@ -1,0 +1,4 @@
+﻿Dataset:    Bitstamp_BTCUSD_d.csv
+Source:     https://www.cryptodatadownload.com/cdd/Bitstamp_BTCUSD_d.csv
+License:    CC BY-NC-SA 4.0
+Comments:   The first line (a comment with the source URL) was removed from the original file to ensure valid CSV formatting.
