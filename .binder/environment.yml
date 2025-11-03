@@ -12,6 +12,7 @@ dependencies:
   - pandas
   - pip
   - pyarrow
+  - pyshp
   - r-ggplot2
   - r-irkernel
   - r-recommended
