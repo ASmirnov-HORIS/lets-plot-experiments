@@ -132,6 +132,7 @@ dmypy.json
 
 .DS_Store
 demo/text_width_estimation/data/full/*.csv
+data/tmp/*.csv
 
 demo/static_maps/roads/data
 demo/geocoding/data_comparison/data
