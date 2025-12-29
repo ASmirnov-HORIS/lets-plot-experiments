@@ -15,6 +15,7 @@ dependencies:
   - pyshp
   - r-ggplot2
   - r-irkernel
+  - r-magrittr
   - r-recommended
   - scipy
   - statsmodels
